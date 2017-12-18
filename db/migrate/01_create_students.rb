@@ -1,12 +1,7 @@
 class CreateStudents < ActiveRecord::Migration
 
-sql = <<-SQL
-  CREATE TABLE IF NOT EXISTS students (
-  id INTEGER PRIMARY KEY,
-  name TEXT
-  )
-SQL
-
-ActiveRecord::Base.connection.execute(sql)
+  def change
+    create_table :artists do |t|
+    end
 
 end
