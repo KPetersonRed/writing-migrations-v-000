@@ -1,4 +1,4 @@
-class Student < ActiveRecord::Migration
+class CreateStudents < ActiveRecord::Migration
 
 sql = <<-SQL
   CREATE TABLE IF NOT EXISTS students (
