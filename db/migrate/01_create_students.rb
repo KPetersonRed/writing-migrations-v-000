@@ -1,3 +1,5 @@
+class Student < ActiveRecord::Base
+
 sql = <<-SQL
   CREATE TABLE IF NOT EXISTS students (
   id INTEGER PRIMARY KEY,
@@ -6,3 +8,5 @@ sql = <<-SQL
 SQL
 
 ActiveRecord::Base.connection.execute(sql)
+
+end
